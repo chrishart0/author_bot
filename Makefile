@@ -56,7 +56,7 @@ clean: ## Clean up the Docker environment
 # The cli command
 .PHONY: cli
 cli: ## Connect to the running API container
-	$(D) exec $(CONTAINER) /bin/sh
+	$(D) exec -it $(CONTAINER) /bin/bash
 
 # The help command
 .PHONY: help
