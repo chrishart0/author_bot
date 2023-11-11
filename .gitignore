@@ -24,7 +24,6 @@ logs/
 Thumbs.db
 
 # IDE/Editor specific files
-.vscode/
 .idea/
 *.sublime*
 *.sln
@@ -45,3 +44,7 @@ alfred_config.sh
 # Exclude application data
 .data/
 src/scraper/out/
+
+# Testing related files
+coverage.xml
+.coverage

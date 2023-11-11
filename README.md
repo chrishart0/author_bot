@@ -412,3 +412,15 @@ While the project provides a solid architecture, there are ample opportunities f
 - Tools - Build new tools to extend the agent's capabilitieaged to explore the following resources for more insights and guidance on prompt engineering:
 - [Prompting Engineering Guide](https://www.promptingguide.ai/): An educational project by DAIR.AI focusing on prompt engineering.
 - [LangChain Hub](https://smith.langchain.com/hub): A centralized platform for managing prompts.
+- Tools - Build new tools to extend the agent's capabilities like calendars, weather data, translations etc.
+- Prompts - Refine and optimize prompts for your chatbot's persona and use cases.
+- Visual Interface - Develop custom graphical interfaces tailored to your needs.
+- API Integration - Build on top of the FastAPI backend to integrate with other services.
+
+## Automated testing
+API tests are provided in `./tests/integration`
+
+To run the API tests, first ensure you've started up the application with docker-compose, then run the below command to execute tests from withing docker container with deps installed.
+```
+docker exec -t RAG_BOT_FASTAPI pytest -v
+```
